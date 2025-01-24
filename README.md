@@ -111,3 +111,21 @@ Voy a ir por partes:
 * display: grid; -> con esto, los botones se organizan automaticamente en filas y columnas
 * grid-template-columns: repeat(4, 1fr); -> son 4 columnas de igual tamaño, 1fr (fracción) hace que cada columna ocupe una partee igual del ancho disponible
 
+### Estilo paraa los botones
+Voy a diseñar los botones, les daré tamaño, grosor y colores:
+```sh
+.btn{
+  background: linear-gradient(50deg, green, yellow); # los colores de los botones tendrá un degradado
+  color: ... ;
+  border: none;
+  padding: 15px; # el relleno de los botones
+  font-size: 1.5rem; # el tamaño de los numeros y simbolos que se encuentran en los botones
+  border-radius: 5px;
+  cursor: pointer; # cuando pasamos con el cursor sobre los botones, se convertirá en una manito
+}
+
+# hover -> al pasar el mouse sobre los botones, cambiarán de color
+.btn:hover{
+  background: linear-gradient(50deg, darkgreen, greenyellow);
+}
+```
