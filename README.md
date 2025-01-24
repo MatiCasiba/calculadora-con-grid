@@ -66,3 +66,26 @@ body{
   background-repeat: no-repeat; # me permite evitar que se repita la imagen
 }
 ```
+
+### Pantalla / Display
+La pantalla donde se mostrarán las ejecuciones de las cuenta que desea usar el usuario, le estaré dando tamaño y color y que se escriban los números desde la derecha:
+```sh
+.pantalla{
+  width: 100%;
+  height: 60px;
+
+  # color de fondoe y letras
+  background-color: ...;
+  color: ...;
+
+  # inicio de los números y tamaño
+  text-align: right;
+  font-size: 2rem;
+
+  # relleno y bordado de la pantalla
+  padding: 10px;
+  border-radius: 5px;
+
+  margin-bottom: 10px; # un esppacio entre la pantalla y los teclados
+}
+```
