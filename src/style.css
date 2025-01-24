@@ -18,6 +18,10 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+.calculadora {
+  width: 300px;
+  background-color: none;
+}
 
 .pantalla{
   width: 100%;
@@ -28,6 +32,11 @@ body{
   font-size: 2rem;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px; /* un esppacio entre la pantalla y los teclados */
+  margin-bottom: 10px;
 }
 
+.botones{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}

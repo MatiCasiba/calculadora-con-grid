@@ -89,3 +89,25 @@ La pantalla donde se mostrarán las ejecuciones de las cuenta que desea usar el 
   margin-bottom: 10px; # un esppacio entre la pantalla y los teclados
 }
 ```
+
+### Calculadora
+En este caso, la calculadora no tendrá un fondo como lo hice anterirormente, pero si estaré ajustando su ancho
+```sh
+.calculadora {
+  width: 300px;
+  background-color: none;
+}
+```
+### Botones
+Comno mencioné al principio, en los botones estaré usando grid, con la finalidad de crear las 4 columnas con 4 botones en cada una de estas:
+```sh
+.botones{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px; # espacio entre los elementos
+}
+```
+Voy a ir por partes:
+* display: grid; -> con esto, los botones se organizan automaticamente en filas y columnas
+* grid-template-columns: repeat(4, 1fr); -> son 4 columnas de igual tamaño, 1fr (fracción) hace que cada columna ocupe una partee igual del ancho disponible
+
