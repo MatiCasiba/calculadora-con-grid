@@ -1,5 +1,5 @@
 * Nombre: Matias Casiba
-* Link GitHub Repo: 
+* Link GitHub Repo: https://github.com/MatiCasiba/calculadora-con-grid
 * Link Netlify:
 
 # Desafio 13 - Calculadora con grid
@@ -30,4 +30,39 @@ En el archivo index.html, estaré usando contenedores, clases y botones para la 
         <button class="btn">/</button>
       </div>
     </div> 
+```
+
+## Diseño de la calculadora
+Te mostraré las configuraciones para el diseño de la calculadora, en este caso, los botones serán trabajdos con grid, con la finalidad de crear las 4 columnas.
+
+* Reset:
+```sh
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+* Elemeto html:
+```sh
+html{
+  font-size: 100%; # el tamaño estandar de las letras/numeros/símbolos, serán de 16px
+}
+```
+
+### Cuerpo
+```sh
+body{
+  display: flex;
+
+  # centrando el contenido (la calculadora) en el eje horizontal y vertical
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh; # el alto de la ventana gráfica
+  background-image: url(/imge/fornmulas-matematicas.webp); # coloco una imagen de fondo
+  background-size: cover; # ajusta la imagen para que cubra todo el fondo
+  background-position: center; # centro la imagen
+  background-repeat: no-repeat; # me permite evitar que se repita la imagen
+}
 ```
