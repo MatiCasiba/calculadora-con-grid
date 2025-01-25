@@ -249,3 +249,28 @@ botones.forEach((boton) => {
 # Reiniciando la pantalla cuando haga click
 pantalla.addEventListener("click", reiniciarCalculadora)
 ```
+
+## Colores en la calculadora
+Eh creado variables de colores, para luego aplicarlos en la calculadora
+```sh
+:root{
+  --colorPantalla: #ffffffee;
+  --colorTeclas-1: #20bc30;
+  --colorTeclas-2: #325038;
+  --colorTeclasH-1: #347b04 ;
+  --colorTeclasH-2: #c5ed75;
+  --colorNumeros: #181515;
+  --colorSimb-num: #fff;
+  --colorSombraPyT: #d74341;
+}
+```
+Como verás, habrá color en pantalla, botones, sombras, númers y simbolos. De parte de los botones notarás que hay 4, dos son al principio, que se combinarán y tendrán un degradado, los otros dos son para cuando el mouse se pare sobre los botones (tambien será degradado). Entonces luego de crear esto, puedo aplicarlos de la siguiente forma:
+```sh
+#ejemplos
+background-color: var(--colorPantalla);
+
+box-shadow: 4px 3px 4px var(--colorSombraPyT);
+
+background: linear-gradient(50deg, var(--colorTeclasH-1), var(--colorTeclasH-2));
+```
+* Nota -> como notarás en la calculadora, tanto los númereros de los botones como los que se encuentran en pantalla, tendrán sombra, lo logré con text-shadow

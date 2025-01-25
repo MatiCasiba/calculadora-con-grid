@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --colorPantalla: #ffffffee;
+  --colorTeclas-1: #20bc30;
+  --colorTeclas-2: #325038;
+  --colorTeclasH-1: #347b04 ;
+  --colorTeclasH-2: #c5ed75;
+  --colorNumeros: #181515;
+  --colorSimb-num: #fff;
+  --colorSombraPyT: #d74341;
+}
 
 html{
   font-size: 100%;
@@ -26,10 +36,12 @@ body{
 .pantalla{
   width: 100%;
   height: 60px;
-  background-color: #ffffffe7;
-  color: black;
+  background-color: var(--colorPantalla);
+  color: var(--colorNumerosSimbolos);
+  box-shadow: 4px 3px 4px var(--colorSombraPyT);
+  text-shadow: 2px 3px 4px;
   text-align: right;
-  font-size: 2rem;
+  font-size: 2.4rem;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -42,14 +54,16 @@ body{
 }
 
 .btn{
-  background: linear-gradient( 500deg, green, white);
-  color: black;
+  background: linear-gradient( 500deg, var(--colorTeclas-1), var(--colorTeclas-2));
+  color: var(--colorSimb-num);
+  box-shadow: 2px 1px 5px 1px var(--colorSombraPyT);
+  text-shadow: 2px 2px 2px black;
   border: none;
-  padding: 15px;
-  font-size: 1.5rem;
+  padding: 20px;
+  font-size: 1.7rem;
   border-radius: 5px;
   cursor: pointer;
 }
 .btn:hover{
-  background: linear-gradient(50deg, darkgreen, greenyellow);
+  background: linear-gradient(50deg, var(--colorTeclasH-1), var(--colorTeclasH-2));
 }
